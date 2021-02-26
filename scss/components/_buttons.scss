@@ -12,22 +12,22 @@
     border-radius: 5px;
   }
   
-  .default {
+  .default:hover {
     background-color: $color5;
   }
   
-  .error {
-    background-color: #e4757a;
+  .error:hover {
+    background-color:$color6;
   }
   
-  .info {
+  .info:hover{
     background-color: #927bc1;
   }
   
-  .success {
+  .success:hover {
     background-color: #63cc82;
   }
   
-  .warning {
+  .warning:hover{
     background-color: #fd7856;
   }
