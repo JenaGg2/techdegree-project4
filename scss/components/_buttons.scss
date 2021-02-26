@@ -12,22 +12,52 @@
     border-radius: 5px;
   }
   
-  .default:hover {
+  .default {
     background-color: $color5;
   }
   
-  .error:hover {
-    background-color:$color6;
+  .error {
+    background-color: $color6;
   }
   
-  .info:hover{
-    background-color: #927bc1;
+  .info{
+    background-color: $color7;
   }
   
-  .success:hover {
-    background-color: #63cc82;
+  .success {
+    background-color: $color8;
   }
   
-  .warning:hover{
-    background-color: #fd7856;
+  .warning {
+    background-color: $color9;
+  }
+
+
+  // button hover effect
+
+  $color-one: $color5;
+  $color-two: $color6;
+  $color-three: $color7;
+  $color-four: $color8;
+  $color-five: $color9;
+
+  $buttons: (
+    default: $color5,
+    error: $color6,
+    info: $color7,
+    success: $color8,
+    warning: $color9,
+  );
+
+  @each $button, $color in $buttons {
+       .#{$button} {
+         background-color: $color;
+
+         &:hover {
+           background-color: lighten($color, 15%);
+
+         }
+       }
+
+
   }
