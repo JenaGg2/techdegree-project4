@@ -8,7 +8,12 @@ $color4:#fff;
 $color5:#51ddfc;
 
 
-// media query variable
+// breakpoint variables
 
-$break-narrow: '(max-width:768px)';
-$break-wide: '(max-width:1400px)';
+$break-narrow: 768px;
+$break-wide: 1400px;
+
+// Font weight variable
+
+$light-weight: 300;
+$bold-weight: 700;
